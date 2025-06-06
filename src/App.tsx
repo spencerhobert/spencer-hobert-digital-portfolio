@@ -27,7 +27,7 @@ export default function App() {
           {/* Left sidebar */}
         </div>
         <div className="col-span-6 flex flex-col h-full gap-4">
-          <div className="h-32 bg-red-500 min-h-32">
+          <div className="h-96 bg-red-500 min-h-32">
             <Header />
           </div>
           <div className="flex-1 bg-white border">
