@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import forestImg from "./images/forest-trees.png";
 
 export default function Header() {
 
@@ -13,11 +14,11 @@ export default function Header() {
         "Computer Science Graduate",
         "Video Game Enthusiast",
         "Husband",
-        "Golden Doodle Father"
+        "Dog Dad"
     ];
 
     const [shownJobTitleIndex, setShownJobTitleIndex] = useState(0);
-    useEffect(() => {
+    useEffect(() => { // Flip between job titles
         const interval = setInterval(() => {
             setShownJobTitleIndex(idx => (idx + 1) % jobTitles.length);
         }, 2500);
@@ -26,8 +27,12 @@ export default function Header() {
     }, [jobTitles.length]);
 
     return (
-        <div className="bg-red-400 h-full flex items-center justify-center">
-            Hello, I'm Spencer Hobert a {jobTitles[shownJobTitleIndex]}
+        <div className="h-full flex text-center items-center justify-center text-white text-shadow-black text-shadow-sm font-bold shadow-2xl object-cover"
+                style={{ backgroundImage: `url(${forestImg})`, objectFit: "cover" }}
+        >
+            Hello, I'm Spencer Hobert
+            <br />
+            {jobTitles[shownJobTitleIndex]}
         </div>
     );
 }

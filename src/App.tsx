@@ -21,12 +21,11 @@ export default function App() {
 
     <div>
       <Navbar />
-      
-      <div className="grid grid-cols-10 w-screen min-h-screen mx-auto">
-        <div className="col-span-2">
+      <div className="grid grid-cols-10 min-h-screen mx-auto">
+        <div className="hidden md:block md:col-span-1 lg:col-span-2">
           {/* Left sidebar */}
         </div>
-        <div className="col-span-6 flex flex-col h-full gap-4">
+        <div className="lg:col-span-6 md:col-span-8 col-span-10 flex flex-col h-full gap-4">
           <div className="h-96 bg-red-500 min-h-32">
             <Header />
           </div>
@@ -37,7 +36,7 @@ export default function App() {
             Footer
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="hidden md:block md:col-span-1 lg:col-span-2">
           {/* Right sidebar */}
         </div>
       </div>
