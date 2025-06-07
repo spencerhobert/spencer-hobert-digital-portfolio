@@ -1,5 +1,5 @@
-import Navbar from './pages/Navbar/Navbar'
-import Header from './pages/Header/Header'
+import Navbar from './pages/Navbar/Navbar';
+import Header from './pages/Header/Header';
 
 export default function App() {
     return (
@@ -37,5 +37,5 @@ export default function App() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

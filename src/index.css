@@ -14,3 +14,7 @@
 body {
     margin: 0;
 }
+
+@utility header-bg-forest-img {
+    background-image: url('./pages/Header/images/forest-trees.png');
+}
