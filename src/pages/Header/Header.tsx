@@ -29,7 +29,7 @@ export default function Header() {
         <div
             className="flex h-full items-center justify-center header-bg-forest-img bg-cover bg-bottom
                 object-cover text-center font-bold text-white shadow-2xl text-shadow-black
-                text-shadow-sm text-3xl"
+                text-shadow-sm text-3xl/loose mask-x-from-black"
         >
             Hello, I'm Spencer Hobert
             <br />
